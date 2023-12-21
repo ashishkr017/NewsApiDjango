@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>search by intrest</h2>
+    
+    <h1> NEWS app</h1>
+    <form action="" method="get">
+        <input type="text" name="category">
+        <button type="submit" value="Search">Search</button>
+
+    </form>
+    <!-- <p>{{articles}}</p> -->
+    {% for i in articles %}
+    <p>{{i.author}}</p>
+    <p>{{i.title}}</p>
+    <hr>
+    <p>{{i.source.name}}</p>
+    <hr>
+    <p>{{i.description}}</p>
+    {% endfor %}
+
+    
+</body>
+</html>
